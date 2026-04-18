@@ -10,9 +10,9 @@ Built as a full-stack assignment project.
 
 ## 🚀 Live Demo
 
-- 🌐 Live App: https://your-project.vercel.app  
-- 👤 Dashboard: https://your-project.vercel.app/dashboard  
-- 🛠️ Admin Panel: https://your-project.vercel.app/admin  
+- 🌐 Live App: https://impact-circle-app.vercel.app/ 
+- 👤 Dashboard: https://impact-circle-app.vercel.app/dashboard  
+- 🛠️ Admin Panel: https://impact-circle-app.vercel.app/admin  
 
 ---
 
