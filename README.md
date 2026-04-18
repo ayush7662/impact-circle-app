@@ -56,7 +56,7 @@ Built as a full-stack assignment project.
 ## 🔐 Admin Credentials (Demo)
 
 Email: kamalayush65@gmail.com 
-Password: 123456  
+Password: 766214  
 
 ---
 
