@@ -139,7 +139,7 @@ export default function Home() {
           <div className="absolute inset-y-0 right-0 w-1/2 bg-[radial-gradient(circle_at_center,theme(colors.rose.500),transparent_65%)] opacity-40" />
           <div className="relative max-w-xl space-y-4">
             <h2 className="font-[family-name:var(--font-display)] text-3xl font-semibold">
-              Ready when your HR reviewer is.
+             
             </h2>
             <p className="text-zinc-200">
               Create a test account, run a subscription in Stripe test mode, and explore the admin draw
