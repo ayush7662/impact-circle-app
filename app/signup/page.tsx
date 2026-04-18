@@ -8,12 +8,17 @@ import { Button, Card, Field, Input } from "@/components/ui";
 export default function Signup() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
 
   const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (password !== confirmPassword) {
+      setMessage("Password and confirm password must match.");
+      return;
+    }
     setLoading(true);
     setMessage(null);
     const { error } = await supabase.auth.signUp({ email, password });
@@ -74,6 +79,17 @@ export default function Signup() {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder="At least 6 characters"
+              />
+            </Field>
+            <Field label="Confirm password">
+              <Input
+                type="password"
+                autoComplete="new-password"
+                required
+                minLength={6}
+                value={confirmPassword}
+                onChange={(e) => setConfirmPassword(e.target.value)}
+                placeholder="Re-enter your password"
               />
             </Field>
             {message && (
